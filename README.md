@@ -9,7 +9,8 @@ O teste foi resolvido de duas formas por dúvida de como teria de ser feito, pri
 
 ## Como rodar?
 ### 1a Forma:
-Para rodar através do python, precisamos abrir o arquivo main.py e digitar na central de comandos da IDE (no meu caso, o terminal do Linux Ubuntu) os seguintes comandos:
+Para rodar através do python, baixaremos os arquivos no repositorio, e extrairemos apenas o main.py, inicial.xlsx e o Makefile (note que todos devem estar na mesma pasta). Abriremos o arquivo main.py e digitar na central de comandos da IDE (no meu caso, o terminal do Linux Ubuntu) os seguintes comandos:
+
 1. "make"
 2. "make run"
 
