@@ -18,5 +18,7 @@ O resultado será o seguinte: um novo arquivo .xlsx será criado colocando os va
 
 ### 2a Forma:
 Para rodar com o script do Exodia, primeiro você deverá acessar no link publico da planilha as seguintes ordens de opções: Extensões -> "Apps Script".
+
 Feito isso, uma nova aba será aberta, onde você poderá programar um script. Após isso você passará o codigo que foi disposto no arquivo "Script-Exodia.txt" e clicará no icone de salvar e depois "Executar".
+
 Finalmente, se for sua primeira vez, você dará permissões para o Exodia escrever sobre. Após aceitar, você poderá voltar ao link do Google Sheets e você poderá ver os resultados obtidos.
