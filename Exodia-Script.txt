@@ -1,0 +1,42 @@
+function calcularSituacao() {
+  var planilha = SpreadsheetApp.getActiveSpreadsheet();
+  var guia = planilha.getSheetByName('engenharia_de_software'); // Substitua pelo nome da sua guia
+
+  var rangeAlunos = guia.getRange('B4:B27');
+  var rangeFaltas = guia.getRange('C4:C27');
+  var rangeP1 = guia.getRange('D4:D27');
+  var rangeP2 = guia.getRange('E4:E27');
+  var rangeP3 = guia.getRange('F4:F27');
+  var rangeMedia = guia.getRange('G4:G27');
+  var rangeNaf = guia.getRange('H4:H27');
+
+  var alunos = rangeAlunos.getValues();
+  var faltas = rangeFaltas.getValues();
+  var p1 = rangeP1.getValues();
+  var p2 = rangeP2.getValues();
+  var p3 = rangeP3.getValues();
+
+  var totalAulas = 60;
+
+  for (var i = 0; i < alunos.length; i++) {
+    var media = (parseFloat(p1[i][0]) + parseFloat(p2[i][0]) + parseFloat(p3[i][0])) / 3;
+    var totalFaltas = parseFloat(faltas[i][0]);
+    var naf = 0;
+
+    if (totalFaltas > 0.25 * totalAulas) {
+      guia.getRange('G' + (i + 4)).setValue('Reprovado por Falta');
+    } else {
+      if (media < 50) {
+        guia.getRange('G' + (i + 4)).setValue('Reprovado por Nota');
+      } else if (50 <= media && media < 70) {
+        guia.getRange('G' + (i + 4)).setValue('Exame Final');
+        // Calcular a Nota para Aprovação Final (naf)
+        naf = 100 - media;
+        guia.getRange('H' + (i + 4)).setValue(naf);
+      } else {
+        guia.getRange('G' + (i + 4)).setValue('Aprovado');
+        guia.getRange('H' + (i + 4)).setValue(0);
+      }
+    }
+  }
+}
