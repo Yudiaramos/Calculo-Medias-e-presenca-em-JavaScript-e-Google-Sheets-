@@ -22,3 +22,7 @@ Para rodar com o script do Exodia, primeiro você deverá acessar no link public
 Feito isso, uma nova aba será aberta, onde você poderá programar um script. Após isso você passará o codigo que foi disposto no arquivo "Script-Exodia.txt" e clicará no icone de salvar e depois "Executar".
 
 Finalmente, se for sua primeira vez, você dará permissões para o Exodia escrever sobre. Após aceitar, você poderá voltar ao link do Google Sheets e você poderá ver os resultados obtidos.
+
+
+## Autor: Yudi Asano Ramos
+Linkedin: https://www.linkedin.com/in/yudi-asano-ramos/
