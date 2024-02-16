@@ -1,5 +1,6 @@
 # Calculo-Medias-e-presenca-em-JavaScript-e-Google-Sheets-
 Engenharia de Software – Desafio [Yudi Asano Ramos] - Desafio Tunts.Rocks
+![image](https://github.com/Yudiaramos/Calculo-Medias-e-presenca-em-JavaScript-e-Google-Sheets-/assets/71808184/c8c32b80-64a6-48d0-a971-80854d3b470b)
 
 
 # OBS
